@@ -5,6 +5,8 @@ self: super: with self.lib; let
   }: {
     self = python;
     packageOverrides = composeExtensions packageOverrides (pySelf: pySuper: {
+      ifcfg = pySelf.callPackage ./ifcfg { };
+
       bson = pySelf.callPackage ./bson { };
 
       catkin-pkg = pySelf.callPackage ./catkin-pkg { };
