@@ -9,7 +9,7 @@ buildPythonPackage rec {
     hash = "sha256-YktaxUFpPM0+LOzDSMDogVTe1Kqt0lTLIxIS36r9vQI=";
   };
 
-  doCheck = false;
+  doCheck = true;
 
   meta = with lib; {
     homepage = "https://github.com/ftao/python-ifcfg";
